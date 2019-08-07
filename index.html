@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fork Me! FCC: Test Suite Template</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <nav id="navbar">
+    <header>
+      JavaScript Basics
+    </header>
+    <a class="nav-link" href="#Introduction">
+      Introduction
+    </a>
+  </nav>
+  <main id="main-doc">
+    <section class='main-section'>
+      <header id="Introduction">
+        <h1> Introduction</h1>
+      </header>
+      <p>
+        One of many JavaScript HTML methods is getElementById().
+      </p>
+      <p>
+        This example uses the method to "find" an HTML element
+        (with id="demo") and changes the element content (innerHTML)
+        to "Hello JavaScript":
+      </p>
+      <p>
+        JavaScript Can Change HTML Attribute Values
+      </p>
+      <p>
+        In this example JavaScript changes the value of the src (source)
+        attribute of an
+        <pre>&lt;img&gt;</pre> tag
+      </p>
+      <p>
+        JavaScript Can Change HTML Styles (CSS)
+      </p>
+      <p>
+        Changing the style of an HTML element, is a variant of changing
+        an HTML attribute:
+      </p>
+      <h5>Example</h5>
+      <code>
+        document.getElementById("demo").style.fontSize = "35px";
+      </code>
+      <p>
+        JavaScript Can Hide HTML Elements
+      </p>
+      <p>
+        Hiding HTML elements can be done by changing the display style:
+      </p>
+      <h5>Example</h5>
+      <code>
+        document.getElementById("demo").style.display = "none";
+      </code>
+      <p>JavaScript Can Show HTML Elements Showing hidden HTML elements can also be done by changing the display style:
+      </p>
+
+      <p>Example document.getElementById(&quot;demo&quot;).style.display = &quot;block&quot;;</p>
+
+      <p>
+        <h1>JavaScript Output</h1> JavaScript Display Possibilities JavaScript can &quot;display&quot; data in different
+        ways:
+      </p>
+      <h5>Example</h5>
+      <pre><code>
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;body>
+  
+    &lt;h1>My First Web Page&lt;/h1>
+    &lt;p>My First Paragraph&lt;/p>
+    
+    &lt;p id="demo">&lt;/p>
+    
+    &lt;script>
+    document.getElementById("demo").innerHTML = 5 + 6;
+    &lt;/script>
+  
+  &lt;/body>
+&lt;/html>
+    </code></pre>
+
+      <p>Writing into an HTML element, using innerHTML. Writing into the HTML output using document.write(). Writing
+        into an alert box, using window.alert(). Writing into the browser console, using console.log(). Using innerHTML
+        To access an HTML element, JavaScript can use the document.getElementById(id) method.</p>
+
+      <p>The id attribute defines the HTML element. The innerHTML property defines the HTML content: </p>
+
+      <p>
+        <h1>JavaScript Comments</h1>
+      </p>
+
+      <p>JavaScript comments can be used to explain JavaScript code, and to make it more readable.</p>
+
+      <p>JavaScript comments can also be used to prevent execution, when testing alternative code.</p>
+
+      <p>Single Line Comments Single line comments start with //.</p>
+
+      <p>Any text between // and the end of the line will be ignored by JavaScript (will not be executed).</p>
+
+      <p>This example uses a single-line comment before each code line:</p>
+
+      <p>Example // Change heading: document.getElementById(&quot;myH&quot;).innerHTML = &quot;My First Page&quot;;</p>
+
+      <p>// Change paragraph: document.getElementById(&quot;myP&quot;).innerHTML = &quot;My first paragraph.&quot;; This
+        example uses a single line comment at the end of each line to explain the code:</p>
+
+      <p>Example var x = 5; // Declare x, give it the value of 5 var y = x + 2; // Declare y, give it the value of x + 2
+        Multi-line Comments Multi-line comments start with /* and end with */.</p>
+
+      <p>Any text between /* and */ will be ignored by JavaScript.</p>
+
+      <p>This example uses a multi-line comment (a comment block) to explain the code:</p>
+
+      <p>Example /* The code below will change the heading with id = &quot;myH&quot; and the paragraph with id =
+        &quot;myP&quot; in my web page: */ document.getElementById(&quot;myH&quot;).innerHTML = &quot;My First
+        Page&quot;; document.getElementById(&quot;myP&quot;).innerHTML = &quot;My first paragraph.&quot;; It is most
+        common to use single line comments. Block comments are often used for formal documentation.</p>
+
+
+    </section>
+
+  </main>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
