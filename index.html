@@ -17,12 +17,16 @@
     <a class="nav-link" href="#Introduction">
       Introduction
     </a>
+    <a class="nav-link" href="#Output">
+      Output
+    </a>
+    <a class="nav-link" href="#Comments">
+      Comments
+    </a>
   </nav>
 
 
   <main id="main-doc" class="content">
-
-
     <section class='main-section'>
       <header id="Introduction">
         <h1> Introduction</h1>
@@ -52,8 +56,8 @@
       </p>
       <h5>Example</h5>
       <code>
-        document.getElementById("demo").style.fontSize = "35px";
-      </code>
+          document.getElementById("demo").style.fontSize = "35px";
+        </code>
       <p>
         JavaScript Can Hide HTML Elements
       </p>
@@ -62,35 +66,37 @@
       </p>
       <h5>Example</h5>
       <code>
-        document.getElementById("demo").style.display = "none";
-      </code>
-      <p>JavaScript Can Show HTML Elements Showing hidden HTML elements can also be done by changing the display style:
+          document.getElementById("demo").style.display = "none";
+        </code>
+      <p>JavaScript Can Show HTML Elements Showing hidden HTML elements
+        can also be done by changing the display style:
       </p>
 
       <p>Example document.getElementById(&quot;demo&quot;).style.display = &quot;block&quot;;</p>
-
+    </section>
+    <section id="Output">
       <p>
         <h1>JavaScript Output</h1> JavaScript Display Possibilities JavaScript can &quot;display&quot; data in different
         ways:
       </p>
       <h5>Example</h5>
       <pre><code>
-&lt;!DOCTYPE html>
-&lt;html>
-  &lt;body>
-
-    &lt;h1>My First Web Page&lt;/h1>
-    &lt;p>My First Paragraph&lt;/p>
-
-    &lt;p id="demo">&lt;/p>
-
-    &lt;script>
-    document.getElementById("demo").innerHTML = 5 + 6;
-    &lt;/script>
-
-  &lt;/body>
-&lt;/html>
-    </code></pre>
+      &lt;!DOCTYPE html>
+      &lt;html>
+        &lt;body>
+        
+          &lt;h1>My First Web Page&lt;/h1>
+          &lt;p>My First Paragraph&lt;/p>
+          
+          &lt;p id="demo">&lt;/p>
+          
+          &lt;script>
+          document.getElementById("demo").innerHTML = 5 + 6;
+          &lt;/script>
+        
+        &lt;/body>
+      &lt;/html>
+          </code></pre>
 
       <p>Writing into an HTML element, using innerHTML. Writing into the HTML output using document.write(). Writing
         into an alert box, using window.alert(). Writing into the browser console, using console.log(). Using innerHTML
@@ -98,6 +104,8 @@
 
       <p>The id attribute defines the HTML element. The innerHTML property defines the HTML content: </p>
 
+    </section>
+    <section id="Comments">
       <p>
         <h1>JavaScript Comments</h1>
       </p>
@@ -128,7 +136,6 @@
         &quot;myP&quot; in my web page: */ document.getElementById(&quot;myH&quot;).innerHTML = &quot;My First
         Page&quot;; document.getElementById(&quot;myP&quot;).innerHTML = &quot;My first paragraph.&quot;; It is most
         common to use single line comments. Block comments are often used for formal documentation.</p>
-
 
     </section>
 
