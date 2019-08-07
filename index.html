@@ -73,7 +73,7 @@
       <h5>Example</h5>
       <code>
           document.getElementById("demo").style.display = "none";
-        </code>
+      </code>
       <p>JavaScript Can Show HTML Elements Showing hidden HTML elements
         can also be done by changing the display style:
       </p>
@@ -126,12 +126,15 @@
 
       <p>This example uses a single-line comment before each code line:</p>
 
-      <p>Example // Change heading: document.getElementById(&quot;myH&quot;).innerHTML = &quot;My First Page&quot;;</p>
+      <p>Example // </p>
+<code>Change heading: document.getElementById(&quot;myH&quot;).innerHTML = &quot;My First Page&quot;;</code>
 
-      <p>// Change paragraph: document.getElementById(&quot;myP&quot;).innerHTML = &quot;My first paragraph.&quot;; This
+      <p>// Change paragraph:
+        <code> document.getElementById(&quot;myP&quot;).innerHTML = &quot;My first paragraph.&quot;; </code>
+        This
         example uses a single line comment at the end of each line to explain the code:</p>
 
-      <p>Example var x = 5; // Declare x, give it the value of 5 var y = x + 2; // Declare y, give it the value of x + 2
+      <p>Example <code>var x = 5;</code> // Declare x, give it the value of 5 <code>var y = x + 2;</code> // Declare y, give it the value of x + 2
         Multi-line Comments Multi-line comments start with /* and end with */.</p>
 
       <p>Any text between /* and */ will be ignored by JavaScript.</p>
@@ -139,8 +142,10 @@
       <p>This example uses a multi-line comment (a comment block) to explain the code:</p>
 
       <p>Example /* The code below will change the heading with id = &quot;myH&quot; and the paragraph with id =
-        &quot;myP&quot; in my web page: */ document.getElementById(&quot;myH&quot;).innerHTML = &quot;My First
-        Page&quot;; document.getElementById(&quot;myP&quot;).innerHTML = &quot;My first paragraph.&quot;; It is most
+        &quot;myP&quot; in my web page: */
+        <code> document.getElementById(&quot;myH&quot;).innerHTML = &quot;My First
+            Page&quot;;</code>
+        <code>document.getElementById(&quot;myP&quot;).innerHTML = &quot;My first paragraph.&quot;;</code> It is most
         common to use single line comments. Block comments are often used for formal documentation.</p>
 
     </section>
@@ -159,8 +164,8 @@
       An array is a special variable, which can hold more than one value at a time.  </p>
 
     <p>  If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:</p>
-
-    <p>var car1 = &quot;Saab&quot;;  var car2 = &quot;Volvo&quot;;  var car3 = &quot;BMW&quot;;    However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300?</p>
+<code>var car1 = &quot;Saab&quot;;  var car2 = &quot;Volvo&quot;;  var car3 = &quot;BMW&quot;;  </code>
+    <p>  However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300?</p>
 
     <p> The solution is an array!</p>
 
@@ -169,10 +174,11 @@
     <p> Creating an Array  Using an array literal is the easiest way to create a JavaScript Array.</p>
 
     <p> Syntax:</p>
+<code>var array_name = [item1, item2, ...];  Example  var cars = [&quot;Saab&quot;, &quot;Volvo&quot;, &quot;BMW&quot;];</code>
+    <p>   Spaces and line breaks are not important. A declaration can span multiple lines:</p>
 
-    <p> var array_name = [item1, item2, ...];  Example  var cars = [&quot;Saab&quot;, &quot;Volvo&quot;, &quot;BMW&quot;];  Spaces and line breaks are not important. A declaration can span multiple lines:</p>
-
-    <p> Example  var cars = [  &quot;Saab&quot;,  &quot;Volvo&quot;,  &quot;BMW&quot;  ];</p>
+    <p> Example  </p>
+    <code>var cars = [  &quot;Saab&quot;,  &quot;Volvo&quot;,  &quot;BMW&quot;  ];</code>
     </section>
 
     <section class='main-section'>
@@ -185,25 +191,40 @@
 
     <p>Wed Aug 07 2019 13:21:14 GMT-0500 (hora de verano central)</p>
 
-    <p> Example var d = new Date(); JavaScript Date Output By default, JavaScript will use the browser's time zone and display a date as a full text string:</p>
+    <p> Example <code>var d = new Date();</code> JavaScript Date Output By default, JavaScript will use the browser's time zone and display a date as a full text string:</p>
 
     <p>Wed Aug 07 2019 13:21:14 GMT-0500 (hora de verano central)</p>
 
     <p>You will learn much more about how to display dates, later in this tutorial.</p>
 
-    <p>Creating Date Objects Date objects are created with the new Date() constructor.</p>
+    <p>Creating Date Objects Date objects are created with the <code>new Date()</code> constructor.</p>
 
     <p>There are 4 ways to create a new date object:</p>
 
-    <p>new Date() new Date(year, month, day, hours, minutes, seconds, milliseconds) new Date(milliseconds) new Date(date string) new Date() new Date() creates a new date object with the current date and time:</p>
+    <ul>
+      <li>
+          new Date()
+      </li>
+      <li>
+          new Date(year, month, day, hours, minutes, seconds, milliseconds)
+      </li>
+      <li>
+          new Date(milliseconds)
+      </li>
+      <li>
+          new Date(date string)
+      </li>
+    </ul>
+    <h6><pre>new Date() </pre></h6>
+    <p><pre>new Date() </pre> creates a new date object with the current date and time:</p>
 
-    <p>Example var d = new Date(); Date objects are static. The computer time is ticking, but date objects are not.</p>
+    <p>Example <code>var d = new Date();</code> Date objects are static. The computer time is ticking, but date objects are not.</p>
 
     <p>new Date(year, month, ...) new Date(year, month, ...) creates a new date object with a specified date and time.</p>
 
     <p>7 numbers specify year, month, day, hour, minute, second, and millisecond (in that order):</p>
 
-    <p>Example var d = new Date(2018, 11, 24, 10, 33, 30, 0); Note: JavaScript counts months from 0 to 11.</p>
+    <p>Example <code>var d = new Date(2018, 11, 24, 10, 33, 30, 0); </code>Note: JavaScript counts months from 0 to 11.</p>
 
     <p>January is 0. December is 11.</p>
 
