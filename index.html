@@ -23,6 +23,12 @@
     <a class="nav-link" href="#Comments">
       Comments
     </a>
+    <a class="nav-link" href="#Arrays">
+      Arrays
+    </a>
+    <a class="nav-link" href="#DateObjects">
+      Date Objects
+    </a>
   </nav>
 
 
@@ -84,16 +90,16 @@
       &lt;!DOCTYPE html>
       &lt;html>
         &lt;body>
-        
+
           &lt;h1>My First Web Page&lt;/h1>
           &lt;p>My First Paragraph&lt;/p>
-          
+
           &lt;p id="demo">&lt;/p>
-          
+
           &lt;script>
           document.getElementById("demo").innerHTML = 5 + 6;
           &lt;/script>
-        
+
         &lt;/body>
       &lt;/html>
           </code></pre>
@@ -139,7 +145,79 @@
 
     </section>
 
-  </main>
+
+    <section class='main-section'>
+      <header id="Arrays">
+        <h1>JavaScript Arrays</h1>
+      </header>
+      <p>JavaScript arrays are used to store multiple values in a single variable.</p>
+
+      <h5>Example</h5>
+    <code>  var cars = ["Saab", "Volvo", "BMW"];</code>
+
+    <p>  What is an Array?
+      An array is a special variable, which can hold more than one value at a time.  </p>
+
+    <p>  If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:</p>
+
+    <p>var car1 = &quot;Saab&quot;;  var car2 = &quot;Volvo&quot;;  var car3 = &quot;BMW&quot;;    However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300?</p>
+
+    <p> The solution is an array!</p>
+
+    <p> An array can hold many values under a single name, and you can access the values by referring to an index number.</p>
+
+    <p> Creating an Array  Using an array literal is the easiest way to create a JavaScript Array.</p>
+
+    <p> Syntax:</p>
+
+    <p> var array_name = [item1, item2, ...];  Example  var cars = [&quot;Saab&quot;, &quot;Volvo&quot;, &quot;BMW&quot;];  Spaces and line breaks are not important. A declaration can span multiple lines:</p>
+
+    <p> Example  var cars = [  &quot;Saab&quot;,  &quot;Volvo&quot;,  &quot;BMW&quot;  ];</p>
+    </section>
+
+    <section class='main-section'>
+      <header id="DateObjects">
+        <h1>JavaScript Date Objects</h1>
+      </header>
+
+
+    <p>JavaScript Date Object lets us work with dates:</p>
+
+    <p>Wed Aug 07 2019 13:21:14 GMT-0500 (hora de verano central)</p>
+
+    <p> Example var d = new Date(); JavaScript Date Output By default, JavaScript will use the browser's time zone and display a date as a full text string:</p>
+
+    <p>Wed Aug 07 2019 13:21:14 GMT-0500 (hora de verano central)</p>
+
+    <p>You will learn much more about how to display dates, later in this tutorial.</p>
+
+    <p>Creating Date Objects Date objects are created with the new Date() constructor.</p>
+
+    <p>There are 4 ways to create a new date object:</p>
+
+    <p>new Date() new Date(year, month, day, hours, minutes, seconds, milliseconds) new Date(milliseconds) new Date(date string) new Date() new Date() creates a new date object with the current date and time:</p>
+
+    <p>Example var d = new Date(); Date objects are static. The computer time is ticking, but date objects are not.</p>
+
+    <p>new Date(year, month, ...) new Date(year, month, ...) creates a new date object with a specified date and time.</p>
+
+    <p>7 numbers specify year, month, day, hour, minute, second, and millisecond (in that order):</p>
+
+    <p>Example var d = new Date(2018, 11, 24, 10, 33, 30, 0); Note: JavaScript counts months from 0 to 11.</p>
+
+    <p>January is 0. December is 11.</p>
+
+    <p>6 numbers specify year, month, day, hour, minute, second:</p>
+
+    <p>Example <code>var d = new Date(2018, 11, 24, 10, 33, 30);</code> 5 numbers specify year, month, day, hour, and minute:</p>
+
+    <p>Example <code>var d = new Date(2018, 11, 24, 10, 33);</code> 4 numbers specify year, month, day, and hour:</p>
+
+    <p>Example <code>var d = new Date(2018, 11, 24, 10);</code> 3 numbers specify year, month, and day:</p>
+
+    <p>Example <code>var d = new Date(2018, 11, 24);</code></p>
+
+ </main>
 
   <script src="js/index.js"></script>
 </body>
